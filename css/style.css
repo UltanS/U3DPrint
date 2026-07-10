@@ -1,14 +1,138 @@
-html,
-body{
-    height: 100%;
+:root {
+    --brand-blue: #0264f5;
+    --brand-blue-light: #178cf6;
+    --brand-dark: #090b0f;
+    --brand-surface: #11151b;
+    --brand-surface-light: #171c24;
+    --brand-border: #28303b;
+    --brand-text: #f5f7fa;
+    --brand-muted: #9aa4b2;
+    --brand-silver: #d7d4d5;
 }
 
-body{
+html,
+body {
+    min-height: 100%;
+}
+
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: var(--brand-dark);
+    color: var(--brand-text);
 }
 
-footer{
+main {
+    lex: 1;
+}
+
+.navbar {
+    background-color: rgba(9, 11, 15, 0.95) !important;
+    border-bottom: 1px solid var(--brand-border);
+    padding: 0.5rem 0rem;
+}
+
+.navbar-logo {
+    height: clamp(55px, 6vw, 75px);
+    width: auto;
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--brand-text) !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--brand-blue-light) !important;
+}
+
+.hero {
+    background:
+        radial-gradient(
+        circle at top right,
+        rgba(2, 100, 245, 0.22),
+        transparent 35%
+        ),
+        var(--brand-dark);
+}
+
+.hero h1 {
+    letter-spacing: -0.04em;
+    color: #ffffff;
+}
+
+.hero p {
+    color: #c7d0da;
+}
+
+.text-secondary {
+    color: var(--brand-muted) !important;
+}
+
+.bg-light,
+.featured-projects {
+    background-color: var(--brand-surface) !important;
+}
+
+.card {
+    background-color: var(--brand-surface-light);
+    color: var(--brand-text);
+    border: 1px solid var(--brand-border) !important;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3) !important;
+}
+
+.hero-image-placeholder,
+.project-image-placeholder {
+    display: grid;
+    place-items: center;
+    background-color: var(--brand-surface-light);
+    color: var(--brand-muted);
+    border: 1px solid var(--brand-border);
+}
+
+.hero-image-placeholder {
+    min-height: 420px;
+}
+
+.project-image-placeholder {
+    min-height: 220px;
+}
+
+.btn-primary {
+    background-color: var(--brand-blue);
+    border-color: var(--brand-blue);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--brand-blue-light);
+    border-color: var(--brand-blue-light);
+}
+
+.btn-outline-light:hover {
+    color: var(--brand-dark);
+}
+
+footer {
     margin-top: auto;
+    background-color: #060709 !important;
+    color: var(--brand-muted);
+    border-top: 1px solid var(--brand-border);
+}
+
+footer a {
+    color: var(--brand-text);
+}
+
+footer a:hover {
+    color: var(--brand-blue-light);
 }
