@@ -1,150 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-        <title>U3D Print</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <img src="media/u3d_logo.png" alt="U3D Print logo" class="navbar-logo">
-                </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="U3D Prints - Custom 3D printed LED lightboxes made in Donegal, Ireland.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>U3D Prints | Custom 3D Printing</title>
+</head>
 
-                <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="index.html">Home</a>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="media/u3d_logo.png" alt="U3D Prints logo" class="navbar-logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="projects.html">Products</a>
                 <a class="nav-link" href="about.html">About</a>
-                <a class="nav-link" href="projects.html">Projects</a>
                 <a class="nav-link" href="contact.html">Contact</a>
-                </div>
             </div>
-            </nav>
-        <main>
-            <section class="hero py-5">
-                <div class="container py-lg-5">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6">
-                    <span class="badge rounded-pill text-bg-primary mb-3">
-                        3D printing showcase
+        </div>
+
+    </div>
+</nav>
+
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-hero g-5">
+
+                <div class="col-lg-7">
+
+                    <span class="u3d-badge">
+                        3D PRINTED IN DONEGAL
                     </span>
 
-                    <h1 class="display-4 fw-bold mb-3">
-                        Turning ideas into physical objects.
+                    <h1 class="hero-title mt-4">
+                        Your ideas.<br>
+                        <span class="blue-text">Made real.</span>
                     </h1>
 
-                    <p class="lead text-secondary mb-4">
-                        Follow my 3D printing journey, explore completed prints and see
-                        what I learn along the way.
+                    <p class="hero-description">
+                        Custom 3D printed products made layer by layer.
+                        From personalised LED lightboxes to whatever comes next.
                     </p>
 
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="projects.html" class="btn btn-primary btn-lg">
-                        View projects
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="projects.html" class="btn btn-primary btn-lg px-4">
+                            View Products
                         </a>
 
-                        <a href="about.html" class="btn btn-outline-light btn-lg">
-                        About U3D Print
+                        <a href="https://www.instagram.com/u3d.prints/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-outline-light btn-lg px-4">
+                            Instagram
                         </a>
                     </div>
-                    </div>
 
-                    <div class="col-lg-6">
-                    <div class="hero-image-placeholder rounded-4 shadow-sm">
-                        <span>Add a photo of your printer here</span>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-            <section class="featured-projects py-5 bg-light">
-                <div class="container">
-                <div class="d-flex justify-content-between align-items-end mb-4">
-                    <div>
-                    <p class="text-primary fw-semibold mb-1">LATEST WORK</p>
-                    <h2 class="fw-bold mb-0">Featured prints</h2>
-                    </div>
-
-                    <a href="projects.html" class="link-dark">View all projects</a>
                 </div>
 
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
-                    <article class="card h-100 border-0 shadow-sm">
-                        <div class="project-image-placeholder card-img-top">
-                        Project image
-                        </div>
-
-                        <div class="card-body">
-                        <h3 class="h5 card-title">First project</h3>
-                        <p class="card-text text-secondary">
-                            Add a short description of the print and what you learned.
-                        </p>
-                        </div>
-                    </article>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                    <article class="card h-100 border-0 shadow-sm">
-                        <div class="project-image-placeholder card-img-top">
-                        Project image
-                        </div>
-
-                        <div class="card-body">
-                        <h3 class="h5 card-title">Second project</h3>
-                        <p class="card-text text-secondary">
-                            Share the material, print time and result.
-                        </p>
-                        </div>
-                    </article>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                    <article class="card h-100 border-0 shadow-sm">
-                        <div class="project-image-placeholder card-img-top">
-                        Project image
-                        </div>
-
-                        <div class="card-body">
-                        <h3 class="h5 card-title">Third project</h3>
-                        <p class="card-text text-secondary">
-                            Explain what went well and what you would change.
-                        </p>
-                        </div>
-                    </article>
+                <div class="col-lg-5">
+                    <div class="brand-display">
+                        <img src="media/u3d_logo.png"
+                             alt="U3D Prints"
+                             class="hero-logo">
+                        <div class="brand-glow"></div>
                     </div>
                 </div>
-                </div>
-            </section>
 
-            <section class="about-preview py-5">
-                <div class="container py-lg-4">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-8">
-                    <h2 class="fw-bold">Learning layer by layer</h2>
-
-                    <p class="lead text-secondary">
-                        With every project comes new challenges and lessons. This is my space
-                        where I share what I learn and how I grow as a 3D printing enthusiast.
-                    </p>
-
-                    <a href="about.html" class="btn btn-outline-primary">
-                        Read my story
-                    </a>
-                    </div>
-                </div>
-                </div>
-            </section>
-            </main>
-        <footer class="py-4">
-            <div class="container text-center">
-                <p class="mb-1">&copy; 2026 U3D Print</p>
             </div>
-            </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+        </div>
+    </section>
+
+
+    <!-- FEATURED PRODUCT -->
+    <section class="section-dark">
+        <div class="container py-5">
+
+            <div class="section-heading text-center mb-5">
+                <span class="section-label">WHAT WE MAKE</span>
+                <h2>Custom LED Lightboxes</h2>
+                <p>
+                    Turn a logo, team crest or design into a custom illuminated display.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+
+                    <div class="featured-product-card">
+                        <div class="row align-items-center g-0">
+
+                            <div class="col-md-6">
+                                <div class="product-visual">
+                                    <div class="lightbox-demo">
+                                        <span>YOUR</span>
+                                        <strong>DESIGN</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="product-content">
+
+                                    <span class="small-label">CUSTOM MADE</span>
+
+                                    <h3>LED Lightbox</h3>
+
+                                    <p>
+                                        A custom 3D printed lightbox created around
+                                        your chosen design. Perfect for football crests,
+                                        logos, gifts, gaming setups and displays.
+                                    </p>
+
+                                    <div class="price-block">
+                                        <span class="price">€30</span>
+                                        <span class="price-note">each</span>
+                                    </div>
+
+                                    <div class="deal">
+                                        2 for €50
+                                    </div>
+
+                                    <a href="projects.html"
+                                       class="btn btn-primary mt-4">
+                                        See Product
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- WHY U3D -->
+    <section class="section-surface">
+        <div class="container py-5">
+
+            <div class="row g-4 text-center">
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-number">01</div>
+                        <h3>Custom</h3>
+                        <p>
+                            Made around your idea rather than pulled
+                            straight from a shelf.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-number">02</div>
+                        <h3>3D Printed</h3>
+                        <p>
+                            Produced layer by layer using modern
+                            3D printing technology.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-number">03</div>
+                        <h3>Made in Donegal</h3>
+                        <p>
+                            Designed, printed and assembled locally
+                            in Donegal, Ireland.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- COMING SOON -->
+    <section class="coming-home">
+        <div class="container py-5 text-center">
+
+            <span class="section-label">NEXT FROM U3D</span>
+
+            <h2 class="mt-3">Something new is printing.</h2>
+
+            <p class="text-secondary mx-auto coming-text">
+                The lightbox is only the beginning. More U3D products are on the way.
+            </p>
+
+            <div class="mystery-symbol mt-4">?</div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container py-5 text-center">
+
+            <h2>Have an idea?</h2>
+
+            <p>
+                Send it over on Instagram and let's see what we can make.
+            </p>
+
+            <a href="https://www.instagram.com/u3d.prints/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary btn-lg mt-2">
+                Message @u3d.prints
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container py-4">
+        <div class="footer-content">
+            <p class="mb-0">&copy; <span class="current-year">2026</span> U3D Prints</p>
+
+            <a href="https://www.instagram.com/u3d.prints/"
+               target="_blank"
+               rel="noopener noreferrer">
+                @u3d.prints
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
 </html>
